@@ -2,19 +2,19 @@
 """Validates function with mypy"""
 
 
-from typing import List, Tuple
+from typing import List
 
 
-def zoom_array(lst: Tuple[int], factor: int = 2) -> Tuple[int]:
+def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
     """Codes"""
-    zoomed_in: Tuple[int] = [
+    zoomed_in: List[int] = [
         item for item in lst
         for i in range(factor)
     ]
-    return tuple(zoomed_in)
+    return zoomed_in
 
 
-array: Tuple[int, int, int] = (12, 72, 91)
+array = [12, 72, 91]
 
 zoom_2x = zoom_array(array)
 
