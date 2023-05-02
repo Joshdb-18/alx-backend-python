@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-
+"""
+Tasks
+"""
 
 
 import asyncio
@@ -20,4 +22,3 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
         result = await task
         completed.append(result)
     return completed
-
